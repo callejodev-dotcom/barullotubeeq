@@ -5,7 +5,7 @@ set -eo pipefail
 SO="$1"
 EXE=""; [ "$SO" = windows ] && EXE=".exe"
 CONF=Release; [ "$SO" = sanitizadores ] && CONF=RelWithDebInfo
-RT="build/BQRenderTest_artefacts/$CONF/BVRenderTest$EXE"
+RT="build/BQRenderTest_artefacts/$CONF/BQRenderTest$EXE"
 
 echo "::group::Son (as curvas, as válvulas, os presets e o estado)"
 "$RT" proba.wav
