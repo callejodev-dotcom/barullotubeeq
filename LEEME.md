@@ -33,7 +33,7 @@ Avisan porque os instaladores non levan sinatura de pago, non porque haxa nada r
 - **11 presets de fábrica**: Plano, Bombo groso, Baixo apertado, Aire na voz, Voz presente, Pegar a mestura, Caixa, Guitarra brillante, Piano, Escuro e morno e Válvula quente. Son tamén os programas do DAW.
 - **Presets propios, A/B e desfacer** (do núcleo común; `.btqpreset`, en Documentos/Barullo Tube EQ/Presets).
 - A luz ao carón do nome é o bypass: o son pasa tal cal (coa latencia).
-- Un **limitador de seguridade** á saída: nunca pasa de −1 dBFS.
+- Un **limitador de seguridade** á saída: nunca pasa de −1 dBFS. Mira 1,5 ms por diante e baixa suave antes do pico, así non soa a clip (a latencia é a do sobremostrado e estes 1,5 ms; o DAW compénsaa).
 
 ## Como se fixo
 
@@ -56,7 +56,7 @@ Todo vai a dobre frecuencia de mostraxe, coa válvula (unha curva suave e un chi
 | `Source/PluginEditor.*` | A interface: a válvula, a curva e os mandos |
 | `tools/RenderTest.cpp` | A proba |
 
-Usa o núcleo común de Escoita ([escoita-nucleo](https://github.com/callejodev-dotcom/escoita-nucleo), v0.4.0).
+Usa o núcleo común de Escoita ([escoita-nucleo](https://github.com/callejodev-dotcom/escoita-nucleo), v0.5.0).
 
 ## Probas
 
